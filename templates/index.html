@@ -1,0 +1,155 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{%static 'style.css'%}" class="stylesheet">
+	<title>Welcome</title>
+
+	<!--  -->
+
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+<div class="na">
+	<img src="{%static 'o.png'%}" alt="" class="geek">
+	<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="{%url 'home'%}">Home <i class="fa fa-home ic" aria-hidden="true"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'project'%}">Projects <i class="fa fa-file-text" aria-hidden="true"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'blog'%}">Blogs <i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'contact'%}">Contact Us <i class="fa fa-phone" aria-hidden="true"></i></a>
+  </li>
+</ul>
+</div>
+<div class="container">
+  <img src="{%static 'brain.png'%}" alt="" class="animated infinite slower bounce our">
+   <div class="content">
+       <h1 class="he">Welcome to <span style="color: #21bf73;">ML</span> GEEKS</h1>
+       <p><b>Hello</b> GEEKS, If you are ML enthusiastic then you are at right place because we are also a ML enthusiastic 😎. We create different ML projects for you and provide pre-trained weights also. </p>
+       <a href="{% url 'about'%}"><button type="button" class="btn btn-lg">Know More</button></a>
+   </div>
+    </div>
+    <div class="mob">
+    <h1 class="animated zoomIn our bye">
+        Our Developers
+    </h1>
+    </div>
+
+
+
+<!--    our Developers -->
+
+
+
+
+  <div class="containr">
+       <div class="box">
+           <div class="imgbx">
+           <img src="{%static 'img.jpeg'%}" alt="">
+           </div>
+           <div class="contente">
+               <h4><b>Bhavuk Sagar</b></h4>
+               <span>HEY, I'm a computer science student and  ML and Web Developer.<br>
+               For more you can check my profiles.</span> <br><a href="https://www.linkedin.com/in/bhavuk-sagar-511412144"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a> <a href="https://github.com/sahil8700"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+           </div>
+       </div>
+       <div class="box">
+           <div class="imgbx">
+           <img src="{%static 'jahanvi.jpg'%}" alt="">
+           </div>
+           <div class="contente">
+               <h4 class="ja"><b>Jahanvi Singh</b></h4>
+              <span> Hey! I'm computer science student and ML developer.</span>
+           </div>
+       </div>
+       <div class="box">
+           <div class="imgbx">
+           <img src="{% static 'nehru.jpg'%}" alt="">
+           </div>
+           <div class="contente">
+               <b><h4 class="ja">Niharika</h4></b>
+               <span>Hey! I'm computer science student and frontend developer.</span>
+           </div>
+       </div>
+       <div class="box">
+           <div class="imgbx">
+           <img src="{%static 'sandeep.jpeg'%}" alt="">
+           </div>
+           <div class="contente">
+               <b><h4 class="ja">Sandeep</h4></b>
+              <span> Hey! I'm computer science student and I'm a Full stack web developer.</span>
+           </div>
+       </div>
+   </div>
+   <br>
+   <br>
+
+
+   <h1 class="project">Projects</h1>
+
+   <div class="container cc">
+    <div class="row">
+        <div class="col-lg-7">
+            <a href="{%url 'face'%}" class="aa"><h1>Face Detection</h1></a>
+            <p>It is a program which detect the face in live video. It use the web camera of the system. It can detect multiple faces in video.It simply create a rectangular box around the faces. This program is developed in <b>Python </b>language. This program can be used in different camera apps and in picture editing applications.</p>
+        </div>
+        <div class="col-lg-5">
+            <img src="{%static 'fc.png'%}" alt="" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5">
+            <img src="{%static 'smilr.jpg'%}" alt="" class="project2">
+        </div>
+        <div class="col-lg-7">
+            <a href="{% url 'smile'%}" class="aa"><h1>Smile Detector</h1></a>
+            <p>It is a program which detect the smile on your face in live video. It use the web camera of the system. It simply create a rectangular box around the lips whenever you smile and it is developed in <b>Python </b>language. This program can be used in camera apps for clicking the image of the user whenever he/she smile.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-7">
+            <a href="{%url 'review'%}" class="aa"><h1>Reviews Analyser</h1></a>
+            <p>Review analyser helps to understand the sentiment of the review. Amazon used this program on their website to analyse the reveiws of other products.
+            It classify the review into 3 category Positve, Negative and Neutral. It is a <b>NLP(Natural Language Processing)</b> problem and accuracy of the model is <b>90%.</b> For training we used Airline-Reviews-Dataset which contains thousands of reviews of all category.</p>
+        </div>
+        <div class="col-lg-5">
+            <img src="{% static 'rvv.png'%}" alt="" class="project3">
+        </div>
+    </div>
+    <p class="more" >Click here for more projects <span><i class="fa fa-hand-o-right animated infinite slower shake " aria-hidden="true"></i></span>
+    <a href="{%url 'project'%}"><button type="button" class="btn btn-lg">More</button></a></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+    <div class="foot">
+        <h4>Made with <i class="fa fa-bolt animated infinite slow heartBeat" aria-hidden="true"></i> by JBNS</h4>
+    </div>
+</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

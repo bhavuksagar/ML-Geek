@@ -1,0 +1,90 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{%static 'fc.css'%}" class="stylesheet">
+
+	<title>Thug Life Filter</title>
+
+	<!--  -->
+
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+	<div class="na">
+		<img src="{static 'o.png'%}" alt="" class="geek">
+		<ul class="nav justify-content-end">
+		<li class="nav-item">
+			<a class="nav-link active" href="{%url 'home'%}">Home <i class="fa fa-home ic" aria-hidden="true"></i></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'project'%}">Projects <i class="fa fa-file-text" aria-hidden="true"></i></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'blog'%}">Blogs <i class="fa fa-rss-square" aria-hidden="true"></i></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'contact'%}">Contact Us <i class="fa fa-phone" aria-hidden="true"></i></a>
+		</li>
+	</ul>
+	</div>
+    <h1 class="hea">Snapchat Filter</h1>
+    <div class="row">
+        <div class="col-lg-7">
+          <h3>Summar<span style="color: #21bf73;">y</span></h3>
+           <p>This project is for fun. It is same as snapchat and instagram filter. In this program is detect the face in live video and place a thug life(Cigratte and spaces) image on the users face and move along with the users face. In this project we are using OpenCV face detetction algorithm for finding the face in the image and for placing image we are using PIL library.   </p>
+            <h3><span style="color: #21bf73;">O</span>penCV</h3>
+            <p>OpenCV is the most popular library for computer vision. Originally written in C/C++, it now provides bindings for Python.
+                OpenCV uses machine learning algorithms to search for faces within a picture. Because faces are so complicated, there isn’t one simple test that will tell you if it found a face or not. Instead, there are thousands of small patterns and features that must be matched. The algorithms break the task of identifying the face into thousands of smaller, bite-sized tasks, each of which is easy to solve. These tasks are also called classifiers.
+                For something like a face, you might have 6,000 or more classifiers, all of which must match for a face to be detected (within error limits, of course). But therein lies the problem: for face detection, the algorithm starts at the top left of a picture and moves down across small blocks of data, looking at each block, constantly asking, “Is this a face?Is this a face?, Is this a face?” Since there are 6,000 or more tests per block, you might have millions of calculations to do, which will grind your computer to a halt.</p>
+                <p><a href="https://github.com/sahil8700/SnapChat-Filter/archive/master.zip"><button type="button" class="btn btn-lg">Download</button></a></p>
+        </div>
+        <div class="col-lg-5">
+            <img src="{%static 'spliff.jpg'%}" alt="" class="fac">
+        </div>
+    </div>
+
+	<div class="container">
+	<h1>W<span style="color: #21bf73">o</span>rking </h1>
+	<p>1. First it access the web camera of the system for capturing the frames.</p>
+	<p>2. After capturing the frames opencv library algorithm start extracting the face feature for detetction.</p>
+	<p>3. After extracting the face feature it provide coordinate of the face.</p>
+	<p>3. On the provided coordinate it place the .png format image.</p>
+	<br>
+	<h3><i class="fa fa-star" aria-hidden="true"></i> Requirments</h3>
+	<p>Requirments for run the program after downloading the program</p>
+	<p>1. Python 3.7</p>
+	<p>2. OpenCv Library</p>
+	<p>3. Numpy Library</p>
+	<p>4. PIL Library</p>
+	<br>
+	<h3><i class="fa fa-star" aria-hidden="true"></i> Click for run the program</h3>
+	 <p><a href="{%url 'thugrun'%}"><button type="button" class="btn btn-lg">Run</button></a></p>
+
+</div>
+
+
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+	</script>
+
+</body>
+
+</html>

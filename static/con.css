@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    background: #000000;
+    position: relative;
+}
+ul>li>a{
+    color: white;
+    margin-right: 50px;
+    margin-top: 20px;
+
+}
+.na ul>li>a:hover{
+    color: #21bf73;
+
+}
+.nav .nav-item .ic{
+    margin-left: 5px;
+}
+.geek{
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.btn{
+    background: #21bf73;
+    color: white;
+     margin-left: 300px;
+    margin-top: 20px;
+}
+.btn:hover{
+    opacity: 80%;
+}
+.container{
+    width: 100%;
+}
+.container> h1 {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #21bf73;
+}
+.container> p{
+  text-align: center;
+  color: white;
+}
+input{
+    margin-bottom: 30px;
+    width: 500px;
+    height: 50px;
+    margin-left: 300px;
+    background: #111;
+}
+textarea{
+    width: 500px;
+    height: 100px;
+     margin-left: 300px;
+    background: #111;
+    color: white;
+}
+
+@media (max-width: 950px){
+  input{
+    margin-left: 0;
+  }
+  textarea{
+    margin-left: 0;
+  }
+  .btn{
+    margin: 0;
+  }
+  .container{
+    margin-left: 0;
+  }
+}

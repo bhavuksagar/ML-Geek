@@ -1,0 +1,103 @@
+*{
+
+}
+body{
+    margin: 0;
+    background: #000000;
+    position: relative;
+}
+ul>li>a{
+    color: white;
+    margin-right: 50px;
+    margin-top: 20px;
+
+}
+.na ul>li>a:hover{
+    color: #21bf73;
+
+}
+.nav .nav-item .ic{
+    margin-left: 5px;
+}
+.geek{
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.btn{
+    background: #21bf73;
+    color: white;
+    margin-top: 20px;
+}
+.btn:hover{
+    opacity: 80%;
+    color: white;
+}
+.btn:active{
+    background: #21bf73;
+    color: white;
+}
+.row{
+    margin:50px;
+}
+.row .col-lg-5> img{
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.row .col-lg-7>h3{
+    color: white;
+    margin-top: 0;
+}
+
+.row .col-lg-7>p{
+    text-align: justify;
+}
+.hea{
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    font-size: 50px;
+}
+.hea::first-letter{
+    color: #21bf73;
+}
+.container>h1{
+    text-align: center;
+    color: white;
+}
+.container>h3{
+    margin-top:0;
+    color: white;
+}
+.container .btn{
+    width: 100px;
+    margin-left: 450px;
+}
+textarea{
+    margin-right: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.ln{
+    width: 550px;
+}
+
+@media(max-width: 950px){
+    .container .btn{
+        margin: 0px;
+    }
+    .rev{
+        width: 350px;
+    }
+    .fac{
+        width: 350px;
+    }
+    .ln{
+        margin-right: 50px;
+    }
+}

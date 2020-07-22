@@ -1,0 +1,84 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{%static 'con.css'%}" class="stylesheet">
+	<title>Contact Us</title>
+	<style media="screen">
+	input{
+			margin-bottom: 30px;
+			width: 500px;
+			height: 50px;
+			margin-left: 300px;
+			background: #111;
+			color: white;
+	}
+	p{
+		text-align: center;
+		color: white;
+	}
+	textarea{
+	    width: 500px;
+	    height: 100px;
+	     margin-left: 300px;
+	    background: #111;
+	    color: white;
+	}
+	</style>
+
+</head>
+
+<body>
+	<div class="na">
+		<img src="{%static 'o.png'%}" alt="" class="geek">
+		<ul class="nav justify-content-end">
+	  <li class="nav-item">
+	    <a class="nav-link active" href="{%url 'home'%}">Home <i class="fa fa-home ic" aria-hidden="true"></i></a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="{% url 'project'%}">Projects <i class="fa fa-file-text" aria-hidden="true"></i></a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="{% url 'blog'%}">Blogs <i class="fa fa-rss-square" aria-hidden="true"></i></a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="{% url 'contact'%}">Contact Us <i class="fa fa-phone" aria-hidden="true"></i></a>
+	  </li>
+	</ul>
+	</div>
+	{%if message_name%}
+	<div class="container">
+	<h1 style="text_align:center; margin-top:200px; color:white;">Thank You <span style="color:#21bf73;">{{message_name}}</span> <i class="fa fa-smile-o" aria-hidden="true"></i> </h1>
+	<p style="text_align:center;">We will respond you shortly............</p>
+	</div>
+	{% else %}
+	<div class="container">
+	<h1>Contact Us</h1>
+	<form class="fo" action="{% url 'conmail'%}" method="POST" name="conn">
+		{%csrf_token%}
+    <input type="text" placeholder="Name" name="name" required><br>
+    <input type="email" placeholder="Email" name="email" required><br>
+    <textarea placeholder="Message" name="message" required></textarea> <br>
+    <a href="{%url 'conmail'%}">	<button type="submit" class="btn btn-lg">Submit</button></a>
+		</form>
+	</div>
+	{% endif %}
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+	</script>
+
+</body>
+
+</html>

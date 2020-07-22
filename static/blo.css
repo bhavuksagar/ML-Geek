@@ -1,0 +1,44 @@
+*{
+
+
+}
+body{
+    margin: 0;
+    position: relative;
+     background: #000000;
+
+
+}
+i{
+    margin-left: 5px;
+}
+
+.na{
+    height: 100px;
+}
+.na ul>li>a:hover{
+    color: #21bf73;
+
+}
+ul>li>a{
+    color: white;
+    margin-right: 50px;
+    margin-top: 20px;
+
+}
+.nav .nav-item .ic{
+    margin-left: 5px;
+}
+.geek{
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+h1{
+  color: white;
+}
+p{
+  color: white;
+}
